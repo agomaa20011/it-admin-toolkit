@@ -14,7 +14,7 @@ if page == "IT Asset Tracker":
     st.markdown("Track, register, and visualize your IT assets like a pro.")
 
     # Load data
-    csv_file = 'D:/DATA SCIENCE/it mock up project/IT-Asset Tracker.csv'
+    csv_file = 'D:/DATA SCIENCE/it mock up project/IT-Admin-Toolkit/IT-Admin-Toolkit.csv'
     try:
         raw = pd.read_csv(csv_file)
     except FileNotFoundError:
@@ -119,7 +119,7 @@ elif page == "Password Reset Guide":
     for i, step in enumerate(steps, 1):
         st.markdown(f"**Step {i}:** {step}")
         
-# ────────────────────── PAGE 2: ONBOARDING CHECKLIST ───────────────
+# ────────────────────── PAGE 3: ONBOARDING CHECKLIST ───────────────
 elif page == "Onboarding Checklist":
     import os
 
@@ -140,7 +140,7 @@ elif page == "Onboarding Checklist":
         "Mark checklist complete"
     ]
 
-    checklist_file = 'onboarding_checklist.csv'
+    checklist_file = 'D:/DATA SCIENCE/it mock up project/IT-Admin-Toolkit/onboarding checklist.csv'
 
     # Load or initialize checklist data
     if os.path.exists(checklist_file):
