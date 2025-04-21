@@ -49,6 +49,15 @@ if page == "IT Asset Tracker":
     st.dataframe(df_filtered, use_container_width=True)
 
     # Charts
+    # definding colors 
+    condition_colors = {
+        "New": "#2ecc71",      # Green
+        "Good": "#3498db",     # Blue
+        "Used": "#f1c40f",     # Yellow
+        "Damaged": "#e74c3c"   # Red
+    }
+
+    
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("📊 Assets by Department")
@@ -61,8 +70,8 @@ if page == "IT Asset Tracker":
     with col2:
         st.subheader("📈 Condition Distribution")
         if not df.empty:
-            fig2 = px.pie(df_filtered, names="Condition", hole=0.4, title="Asset Condition Overview",
-                          color_discrete_sequence=px.colors.qualitative.Safe)
+            fig2 = px.pie(df_filtered, names="Condition", hole=0.4, title="Asset Condition Overview", color="Condition",
+                          color_discrete_map=condition_colors)
             st.plotly_chart(fig2, use_container_width=True)
 
     # Asset Entry Form
