@@ -53,7 +53,7 @@ if page == "IT Asset Tracker":
     condition_colors = {
         "New": "#2ecc71",      # Green
         "Good": "#3498db",     # Blue
-        "Used": "#f1c40f",     # Yellow
+        "Used": "#e67e22",     # Orange
         "Damaged": "#e74c3c"   # Red
     }
 
