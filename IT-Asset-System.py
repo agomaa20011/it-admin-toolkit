@@ -140,7 +140,7 @@ elif page == "Onboarding Checklist":
         "Mark checklist complete"
     ]
 
-    checklist_file = 'D:/DATA SCIENCE/it mock up project/IT-Admin-Toolkit/onboarding checklist.csv'
+    checklist_file = 'onboarding_checklist.csv'
 
     # Load or initialize checklist data
     if os.path.exists(checklist_file):
