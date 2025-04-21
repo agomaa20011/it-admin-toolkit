@@ -53,7 +53,7 @@ if page == "IT Asset Tracker":
     with col1:
         st.subheader("📊 Assets by Department")
         if not df.empty:
-            dept_data = df["Department"].value_counts().reset_index()
+            dept_data = df_filtered["Department"].value_counts().reset_index()
             dept_data.columns = ["Department", "Count"]
             fig1 = px.bar(dept_data, x="Department", y="Count", color="Department", template="plotly_white")
             st.plotly_chart(fig1, use_container_width=True)
@@ -61,7 +61,7 @@ if page == "IT Asset Tracker":
     with col2:
         st.subheader("📈 Condition Distribution")
         if not df.empty:
-            fig2 = px.pie(df, names="Condition", hole=0.4, title="Asset Condition Overview",
+            fig2 = px.pie(df_filtered, names="Condition", hole=0.4, title="Asset Condition Overview",
                           color_discrete_sequence=px.colors.qualitative.Safe)
             st.plotly_chart(fig2, use_container_width=True)
 
