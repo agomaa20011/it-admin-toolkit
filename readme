@@ -1,4 +1,4 @@
-# 🛠️ IT Admin Toolkit
+#🛠️ IT Admin Toolkit
 
 A sleek, interactive web app built with Python and Streamlit to support IT administrators in tracking assets, onboarding new employees, and managing password resets. Designed for internal use by IT support and operations teams.
 
@@ -6,15 +6,15 @@ A sleek, interactive web app built with Python and Streamlit to support IT admin
 
 ---
 
-## 🚀 Live Demo
+##🚀 Live Demo
 
 👉 [Click to view the live app](https://it-app-toolkit-gus.streamlit.app/)
 
 ---
 
-## 📦 Features
+##📦 Features
 
-### 🔍 IT Asset Tracker
+###🔍 IT Asset Tracker
 - Add and manage assets (e.g., laptops, monitors, headsets)
 - Filter by department and asset condition
 - Interactive charts (bar + pie) showing asset breakdowns
@@ -25,12 +25,12 @@ A sleek, interactive web app built with Python and Streamlit to support IT admin
 - Mark items as complete with checkboxes
 - Progress saved and editable across sessions
 
-### 🔐 Password Reset Guide
+###🔐 Password Reset Guide
 - Step-by-step instructions for resetting user passwords in Microsoft 365
 
 ---
 
-## 🖥️ Built With
+##🖥️ Built With
 
 - [Python](https://www.python.org/)
 - [Streamlit](https://streamlit.io/)
