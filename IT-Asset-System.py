@@ -14,7 +14,7 @@ if page == "IT Asset Tracker":
     st.markdown("Track, register, and visualize your IT assets like a pro.")
 
     # Load data
-    csv_file = 'D:/DATA SCIENCE/it mock up project/IT-Admin-Toolkit/IT-Admin-Toolkit.csv'
+    csv_file = 'IT-Asset Tracker.csv'
     try:
         raw = pd.read_csv(csv_file)
     except FileNotFoundError:
